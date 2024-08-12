@@ -59,6 +59,10 @@ nmap -sv -O 192.168.4.78
 
 Приведите ответ в свободной форме
 
+
+
+## Решение 2
+
 1. sudo nmap -sS 192.168.4.78
 
 
@@ -66,17 +70,23 @@ SYN - Nmap посылает SYN-пакет, как бы намереваясь �
 
 nmap -sS <ip> - TCP SYN сканирование. SYN это используемый по умолчанию и наиболее популярный тип сканирования. 
 
-![рис 1](https://github.com/ysatii/attacks-on-is/blob/main/img/image1_1.jpg)
 
-![рис 2](https://github.com/ysatii/attacks-on-is/blob/main/img/image1_2.jpg)
 
 ![рис 3](https://github.com/ysatii/attacks-on-is/blob/main/img/image1_3.jpg)
 
 ![рис 4](https://github.com/ysatii/attacks-on-is/blob/main/img/image1_4.jpg)
 
 
-[sudo nmap -sS 192.168.4.78](https://github.com/ysatii/attacks-on-is/blob/main/wareshark/1.pcapng)
+[Запись сканирования sudo nmap -sS 192.168.4.78](https://github.com/ysatii/attacks-on-is/blob/main/wareshark/1.pcapng)
+
+2. sudo nmap -sF 192.168.4.78
+FIN - Nmap посылает FIN-пакет, в TCP заголовок ставится флаг FIN. Согласно RFC 793, на прибывший FIN-пакет на закрытый порт сервер должен ответить пакетом RST. FIN-пакеты на открытые порты должны игнорироваться сервером. По этому различию становится возможным отличить закрытый порт от открытого.
+
+nmap -sF <ip> - FIN сканирование. Устанавливается только TCP FIN бит.
+
+![рис 5](https://github.com/ysatii/attacks-on-is/blob/main/img/image1_5.jpg)
+
+![рис 6](https://github.com/ysatii/attacks-on-is/blob/main/img/image1_6.jpg)
 
 
-## Решение 2
-
+[Запись сканирования sudo nmap -sS 192.168.4.78](https://github.com/ysatii/attacks-on-is/blob/main/wareshark/2.pcapng)
