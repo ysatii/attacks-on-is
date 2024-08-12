@@ -99,7 +99,7 @@ nmap -sX <ip> - Xmas сканирование. Устанавливаются FI
 
 ![рис 7](https://github.com/ysatii/attacks-on-is/blob/main/img/image1_7.jpg)
 
-![рис 8](https://github.com/ysatii/attacks-on-is/blob/main/img/image1_7.jpg)
+![рис 8](https://github.com/ysatii/attacks-on-is/blob/main/img/image1_8.jpg)
 
 
 [Запись сканирования sudo nmap -sX 192.168.4.78](https://github.com/ysatii/attacks-on-is/blob/main/wareshark/3.pcapng)
