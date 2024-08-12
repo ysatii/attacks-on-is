@@ -35,7 +35,7 @@ https://www.cyberithub.com/how-to-install-metasploitable-2-in-virtualbox-using-4
 nmap -sv -O 192.168.4.78
 ```
 ![рис 1](https://github.com/ysatii/attacks-on-is/blob/main/img/image1_1.jpg)
-![рис 1](https://github.com/ysatii/attacks-on-is/blob/main/img/image1_1.jpg)
+![рис 1](https://github.com/ysatii/attacks-on-is/blob/main/img/image1_2.jpg)
 
 977 портов закрыты - 23 открыты
 
