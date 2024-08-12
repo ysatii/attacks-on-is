@@ -63,3 +63,20 @@ nmap -sv -O 192.168.4.78
 
 ## Решение 2
 
+1. sudo nmap -sS 192.168.4.78
+
+
+SYN - Nmap посылает SYN-пакет, как бы намереваясь открыть настоящее соединение, и ожидает ответ. Наличие флагов SYN|ACK в ответе указывает на то, что порт удаленной машины открыт и прослушивается. Флаг RST в ответе означает обратное. Если Nmap принял пакет SYN|ACK, то в ответ немедленно отправляет RST-пакет для сброса еще не установленного соединения
+
+nmap -sS <ip> - TCP SYN сканирование. SYN это используемый по умолчанию и наиболее популярный тип сканирования. 
+
+![рис 1](https://github.com/ysatii//attacks-on-is/blob/main/img/image1_1.jpg)
+
+![рис 2](https://github.com/ysatii//attacks-on-is/blob/main/img/image1_2.jpg)
+
+![рис 3](https://github.com/ysatii//attacks-on-is/blob/main/img/image1_3.jpg)
+
+![рис 4](https://github.com/ysatii//attacks-on-is/blob/main/img/image1_4.jpg)
+
+
+[sudo nmap -sS 192.168.4.78](https://github.com/ysatii/attacks-on-is/blob/main/wareshark/1.pcapng)
