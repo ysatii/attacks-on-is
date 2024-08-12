@@ -89,4 +89,18 @@ nmap -sF <ip> - FIN сканирование. Устанавливается т�
 ![рис 6](https://github.com/ysatii/attacks-on-is/blob/main/img/image1_6.jpg)
 
 
-[Запись сканирования sudo nmap -sS 192.168.4.78](https://github.com/ysatii/attacks-on-is/blob/main/wareshark/2.pcapng)
+[Запись сканирования sudo nmap -sF 192.168.4.78](https://github.com/ysatii/attacks-on-is/blob/main/wareshark/2.pcapng)
+
+
+3. sudo nmap -sX 192.168.4.78
+Xmas - Устанавливаются FIN, PSH и URG флаги. Если в результате FIN-сканирования мы получили список открытых портов, то это не Windows. Если же все эти методы выдали результат, что все порты закрыты, а SYN-сканирование обнаружило открытые порты, то мы скорей всего имеете дело с ОС Windows, Cisco, BSDI, IRIX, HP/UX и MVS. Все эти ОС не отправляют RST-пакеты.
+
+nmap -sX <ip> - Xmas сканирование. Устанавливаются FIN, PSH и URG флаги.
+
+![рис 7](https://github.com/ysatii/attacks-on-is/blob/main/img/image1_7.jpg)
+
+![рис 8](https://github.com/ysatii/attacks-on-is/blob/main/img/image1_7.jpg)
+
+
+[Запись сканирования sudo nmap -sX 192.168.4.78](https://github.com/ysatii/attacks-on-is/blob/main/wareshark/3.pcapng)
+
