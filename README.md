@@ -104,3 +104,14 @@ nmap -sX <ip> - Xmas сканирование. Устанавливаются FI
 
 [Запись сканирования sudo nmap -sX 192.168.4.78](https://github.com/ysatii/attacks-on-is/blob/main/wareshark/3.pcapng)
 
+4. sudo nmap -sU 192.168.4.78  
+UDP - На каждый порт сканируемой машины отправляется UDP-пакет без данных. Этот метод используется для определения, какие UDP-порты на сканируемом хосте являются открытыми.Если в ответ было получено ICMP-сообщение "порт недоступен", это означает, что порт закрыт. В противном случае предполагается, что сканируемый порт открыт.
+
+nmap -sU <ip> - Различные типы UDP сканирования. Большой проблемой при UDP сканировании является его медленная скорость работы.
+
+![рис 9](https://github.com/ysatii/attacks-on-is/blob/main/img/image1_9.jpg)
+
+![рис 10](https://github.com/ysatii/attacks-on-is/blob/main/img/image1_10.jpg)
+
+
+[Запись сканирования sudo nmap -sU 192.168.4.78](https://github.com/ysatii/attacks-on-is/blob/main/wareshark/4.pcapng)
