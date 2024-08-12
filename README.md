@@ -70,13 +70,13 @@ SYN - Nmap посылает SYN-пакет, как бы намереваясь �
 
 nmap -sS <ip> - TCP SYN сканирование. SYN это используемый по умолчанию и наиболее популярный тип сканирования. 
 
-![рис 1](https://github.com/ysatii//attacks-on-is/blob/main/img/image1_1.jpg)
+![рис 1](https://github.com/ysatii/attacks-on-is/blob/main/img/image1_1.jpg)
 
-![рис 2](https://github.com/ysatii//attacks-on-is/blob/main/img/image1_2.jpg)
+![рис 2](https://github.com/ysatii/attacks-on-is/blob/main/img/image1_2.jpg)
 
-![рис 3](https://github.com/ysatii//attacks-on-is/blob/main/img/image1_3.jpg)
+![рис 3](https://github.com/ysatii/attacks-on-is/blob/main/img/image1_3.jpg)
 
-![рис 4](https://github.com/ysatii//attacks-on-is/blob/main/img/image1_4.jpg)
+![рис 4](https://github.com/ysatii/attacks-on-is/blob/main/img/image1_4.jpg)
 
 
 [sudo nmap -sS 192.168.4.78](https://github.com/ysatii/attacks-on-is/blob/main/wareshark/1.pcapng)
